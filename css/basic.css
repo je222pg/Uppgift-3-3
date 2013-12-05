@@ -1,19 +1,76 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------------------------------------*/
+
+
+
+
 
 #container {
-  background-color:Sienna;
+  overflow: hidden;
+  background: url(pics/coffey.jpg) #51483E;
   height: auto;
   width:600px;
-  padding: 20px 0px 0px 0px;
-  margin: 0 auto;
-    border: 1px solid;
-    border-color: Wheat;
+  padding: 0px 0px;
+  margin: 20px auto;
+  border: 1px solid ;
+  border-color: #CDCAB9;
+  background-repeat: no-repeat;
+  background-position: 0 30px;
 }
 
 /* HEADER */
 
 #topbar {
-    background: url(pics/coffey.jpg);
-    height: 200px;
+    font-style: italic;
+    height:200px;
     float: inherit;
     background-repeat: no-repeat;
     clear: both;
@@ -23,58 +80,72 @@
 }
 
 #maincontent {
-    height: 400px;
+    min-height: 325px;
     width: 375px;
-    background-color: Lavender;
-    background-size: 500px;
+    background-size: 325px;
     float: left;
     clear: left;
+    
+}
+#maincontent img {
+    float:left;
+    padding: 0px 5px 0px 12px;
 }
 
 
 #maincontent p {
-    color: Peru;
-    font-family: Times, 12px;
+    color: #797167;
+    font-family: "Verdana";
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px 7px 0px 12px;
     
     
-    
+}
+#maincontent h1 {
+    font-size: 30px;
+    font-weight:100;
+    padding: 0px 0px 0px 12px;
+    color:  #797167;
+    margin-bottom: 15px;
     
 }
 
 
 #subcontent {
-    background-color: Lavender;
     float:right;
     clear:right;
     width: 224px;
-    min-height: 400px;
+    min-height: 325px;
     border-left: 1px dashed;
     border-color: Silver;
-    
+    padding: 10px 0px 0px 0px;
+    margin-top: 20px;
     
 }
 
 #subcontent p {
     padding: 0px 0px 0px 12px;
-    font-style: italic;
-    font-family: Verdana, Sans-serif;
+    margin-top: 25px;
+    font-family: "Timesnewroman";
     font-size: 12px;
-    color: LightSlateGrey;
+    color: #797167;
     line-height: 20px;
 }
 
 #subcontent h1 {
-    padding: 20px 0px 0px 12px;
-    font-family: Verdana, Sans-serif;
-    color:LightSlateGrey ;
-    font-size: 15px;
+    padding: 10px 0px 0px 12px;
+    font-family: "Timesnewroman";
+    color:#797167 ;
+    font-size: 18px;
 }
 
 #subcontent h2 {
-    padding: 40px 0px 0px 12px;
-    font-size: 13px;
-    font-family: Verdana, Sans-serif;
-    color: SlateGrey ;
+    padding: 30px 0px 5px 12px;
+    font-size: 14px;
+    font-family: "Timesnewroman";
+    color: #797167 ;
+    font-weight:100;
 }
 #subcontent ul {
     padding:0px 0px 0px 12px;
@@ -83,83 +154,100 @@
     list-style-type: none;
 }
 #subcontent a {
-    
-    text-decoration: none;
-    color: SlateGrey;
+    font-size: 13px;
+    font-family: "Verdana";
+    line-height: 15px;
+    color: #797167;
 }
 
-
-
-
+#content {
+    min-height: 300px;
+    height: auto;
+    color: black;
+    border-top: 1px solid white;
+    clear: both;
+    overflow:hidden;
+    background-color: #EAE9D3;
+}
+#content #maincontent, #subcontent {
+    padding: 20px 0px 10px 0px;
+    
+}
 
 
 
  /* MENY */
+#menu .active a {
+         color: #797066;
+         background-color: #eae7d2;
+         border-bottom: 1px solid #797167;
+}
  
 
 #menu {
-    width: 506px;
-    height: 39px;
-    text-align: center;
-    padding: 10px;
+    margin-top: 35px;
+    border-bottom: none;
+    width: 475px;
+    clear: inherit;
+    height: 25px;
+    text-align: center; 
+    padding: 10px 0px 0px 10px;
 }
+
 
 #menu ul {
     height: auto ;
-    padding: 7px 0px;
-    Margin: auto;
-    background-color: SandyBrown;
+    
+    
     
     
 }
 
+#menu > a {
+    display:none;
+}
 
-
-#menu li {
+#menu ul li {
     display: inline;
-    padding: 7px;
+    margin-left: 1px;
    
     
 }
-#menu a{
-    Font-family: Verdana;
+#menu ul li a{
+
+    Font-family: Verdana, Sans-serif;
     text-decoration: none;
     color: white;
-    padding: 7px;
+    padding: 8px; 
+    font-weight:100;
+    font-size: 90%;
+    text-transform: capitalize;
+    background-color: #797167;
+    display:  inline block;
+    border-top: 1px solid #847D73;
+
 }
-#menu .active {
-         color: blue;
-         background-color: Lavender;
-}
+
 
 #menu a:hover{ 
  
  color: black;
- background-color: wheat;
+ background-color: #9c9084;
 }
-
-
-
-
-/* RUBRIKER */
-
-
-
-
-
-
 
 
 /* FOOTER */
 
 #bottomcontent {
-    background-color: Lavender;
+    background-color: #EAE9D3;
     padding: 15px;
     width: 570px;
     clear:both;
-    font-family: Verdana, Sans-serif 5px;
+    font-family: "Verdana";
+    font-size: 10px;
     font-style: italic;
-    color: Peru;
+    font-weight: 100;
+    color: #797167;
     
     
 }
