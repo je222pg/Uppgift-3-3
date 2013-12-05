@@ -75,7 +75,10 @@ table {
     background-repeat: no-repeat;
     clear: both;
     text-align: right;
-
+    color:#EAE7D2;
+    font-size: 13px;
+    padding: 2px 0px 0px 0px;
+    
   /* CONTENT */  
 }
 
